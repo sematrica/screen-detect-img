@@ -116,11 +116,11 @@
 </head>
 <body>
 
-<h2>All-in-One: Colors, Object Detection, OCR + Meta Info + Clone Prompt</h2>
+<h2>Image Deep Function: Colors, Object Detection, OCR + Meta Info + Clone Prompt</h2>
 
 <!-- 1) UPLOAD SECTION -->
 <div class="section" id="uploadSection">
-    <h3>1. Upload an Image</h3>
+    <h3>1. [Upload an Image]</h3>
     <input type="file" id="fileInput" accept="image/*" />
     <br/>
     <small>(Supported for color extraction, object detection, and OCR)</small>
@@ -128,14 +128,14 @@
 
 <!-- 2) PREVIEW SECTION -->
 <div class="section" id="previewSection">
-    <h3>2. Preview</h3>
-    <img id="uploadedImage" alt="Uploaded Image" />
+    <h3>2. [Preview]</h3>
+    <img id="uploadedImage" alt="[Uploaded Image]" />
     <canvas id="detectionCanvas"></canvas>
 </div>
 
 <!-- 3) COLOR EXTRACTION SECTION -->
 <div class="section" id="colorSection">
-    <h3>3. Color Extraction</h3>
+    <h3>3. [Color Extraction]</h3>
     <p>This will sample the image, find unique colors, show their percentages in a pie chart, and allow XLSX export.</p>
     <button id="processColorsBtn">Extract Colors</button>
     <button id="exportBtn">Export Colors to XLSX</button>
@@ -145,7 +145,7 @@
 
 <!-- 4) OBJECT DETECTION SECTION -->
 <div class="section" id="objectSection">
-    <h3>4. Object Detection (COCO-SSD)</h3>
+    <h3>4. [Object Detection (COCO-SSD)]</h3>
     <p>Click to load the model and detect objects in the uploaded image. Results will be drawn as boxes on the canvas.</p>
     <button
             id="detectObjectsBtn"
@@ -245,7 +245,7 @@
 
 <!-- 6) META INFORMATION SECTION -->
 <div class="section" id="metaInfoSection">
-    <h3>6. Meta Information</h3>
+    <h3>6. [Meta Information]</h3>
     <button id="showMetaBtn">Show Meta Info</button>
     <div id="metaSection">
         {
@@ -338,7 +338,7 @@
 
     <!-- 7) LLM - CLONE - PROMPT SECTION -->
     <div class="section" id="clonePromptSection">
-        <h3>7. LLM - CLONE - PROMPT</h3>
+        <h4>6.1 [LLM - CLONE - PROMPT]</h4>
         <button id="showClonePromptBtn">Show Clone Prompt</button>
         <div id="clonePromptDiv">
             <!-- Hidden by default, toggled below in JS -->
